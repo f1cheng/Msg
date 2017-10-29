@@ -40,5 +40,9 @@ handlers.find(id) != handlers.end();
 std::map<int, Func>::iterator iter = handlers.find(id);
 if (iter != handlers.end())
   (*iter).send->handleMsg(msg);
-    
+
+StartupReadyResMsg resp(ack_id);
+resp.send();
+
+                
 #endif
