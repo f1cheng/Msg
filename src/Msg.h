@@ -25,4 +25,8 @@ protected:
   void *msg;
 };
 
+typedef CMsg<xxxType, 0x100> StartupNotificationMsg;
+class Service;
+class ServiceStartup;
+
 #endif
