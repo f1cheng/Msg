@@ -26,7 +26,19 @@ protected:
 };
 
 typedef CMsg<xxxType, 0x100> StartupNotificationMsg;
-class Service;
+typedef CMsg<xxxType, 0x101> StartupReadyMsg;
+//class Service;
 class ServiceStartup;
+std::map<int, Func> handlers;
+==addHandler(handle1);
+==addHandler(handle2);
+auto func = bind(&ServiceStartup::handleNotif, _1, , _2);
+handlers.insert(std::pair<int, Func>(StartupNotificationMsg::ID, func);
+//func(service, msg);
 
+handlers.find(id) != handlers.end();
+std::map<int, Func>::iterator iter = handlers.find(id);
+if (iter != handlers.end())
+  (*iter).send->handleMsg(msg);
+    
 #endif
