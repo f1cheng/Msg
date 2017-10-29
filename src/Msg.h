@@ -32,7 +32,7 @@ class ServiceStartup;
 std::map<int, Func> handlers;
 ==addHandler(handle1);
 ==addHandler(handle2);
-auto func = bind(&ServiceStartup::handleNotif, _1, , _2);
+auto func = bind(&ServiceStartup::handleNotif, _1, _2);//bind(&xxx, this, _2);
 handlers.insert(std::pair<int, Func>(StartupNotificationMsg::ID, func);
 //func(service, msg);
 
