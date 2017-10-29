@@ -25,8 +25,8 @@ protected:
   void *msg;
 };
 
-typedef CMsg<xxxType, 0x100> StartupNotificationMsg;
-typedef CMsg<xxxType, 0x101> StartupReadyMsg;
+typedef CMsg<NotifyType, 0x100> StartupNotificationMsg;
+typedef CMsg<ReadyType, 0x101> StartupReadyMsg;
 //class Service;
 class ServiceStartup;
 std::map<int, Func> handlers;
