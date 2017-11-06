@@ -8,7 +8,7 @@ typedef struct MsgHeader
 typedef struct Msg
 {
   MsgHeader header;
-  int payload;
+  int payload;//memcpy(&msg->payload, &orignal_data, size-headerSize);(char buf[])
 } Msg;
 
 template <typename Payload, unsigned id = 0>
