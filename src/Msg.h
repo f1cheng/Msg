@@ -44,5 +44,10 @@ if (iter != handlers.end())
 StartupReadyResMsg resp(ack_id);
 resp.send();
 
+//shared memory shm_open, mmap
+/* 1. receiving shared buffer for each process(push/pop location of global message allocating offset)
+ * 2. global shared memory pool(fixed size) for messages
+ */
+ 
                 
 #endif
