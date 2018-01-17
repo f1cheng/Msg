@@ -19,6 +19,7 @@ big endian(most significant value) stored first(at lowest storage adress)
 3. inproc
 4. ipc
 5. tcp
+6. file base analysis
 ```
 
 # message queue types
