@@ -11,3 +11,9 @@ ID + Payload
 ```
 big endian(most significant value) stored first(at lowest storage adress)  
 ```
+# 可靠消息
+```
+1. TCP ACK mechanism
+```
+
+# ZeroMQ sourcecode analysis point
