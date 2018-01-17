@@ -17,3 +17,9 @@ big endian(most significant value) stored first(at lowest storage adress)
 ```
 
 # ZeroMQ sourcecode analysis point
+
+# message queue types
+```
+1. message queue with fix length structure, message content is fully filled
+e.g: struct msg_q{int msg_type; char buf[400];}
+```
