@@ -16,7 +16,14 @@ big endian(most significant value) stored first(at lowest storage adress)
 1. TCP ACK mechanism
 ```
 
-# ZeroMQ sourcecode analysis point
+# ZeroMQ
+```
+1. models
+2. lock less pipe
+3. inproc
+4. ipc
+5. tcp
+```
 
 # message queue types
 ```
